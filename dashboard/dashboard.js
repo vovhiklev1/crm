@@ -1,5 +1,7 @@
 'use strict';
 
-app.controller('View1Ctrl', function () {
-    console.log('v1');
+app.controller('DashboardCtrl', function ($scope,DataFactory, SettingsAppFactory) {
+    console.log('DashboardCtrl');
+    /* var deals = DataFactory.getDeals();
+     $scope.deals = deals;*/
 });

@@ -20,7 +20,7 @@
                     <h2>header</h2>
                 </header>
                 <div class="container">
-                <div class="row">
+                    <div class="row">
                         <div class="col-md-10 ">
                             <div class="">
                                 <div class="table-wrap">
@@ -36,17 +36,29 @@
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <tr>
+                                        <tr ng-repeat="deal in deals">
                                             <td></td>
-                                            <td>Doe</td>
+                                            <td>{{deal.name}}</td>
                                             <td>john@example.com</td>
                                             <td>John</td>
-                                            <td>Doe</td>
+                                            <td ng-style={'background-color':'{{deal.stage_color}}'}>Doe</td>
                                             <td>john@example.com</td>
                                         </tr>
                                         </tbody>
                                     </table>
                                 </div>
+
+                                <ul class="pagination">
+                                    <li><a href="" ng-click="getPrev()">«</a></li>
+                                    <!--<li><a href="#">«</a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a class="active" href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>-->
+                                    <li ng-repeat="i in list track by $index"><a ng-class="{'ac': true }" href="#">{{i}}</a></li>
+                                    <li><a  href="" ng-click="getNext()">»</a></li>
+
+                                </ul>
                             </div>
                         </div>
                     </div>

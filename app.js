@@ -7,11 +7,18 @@ var app = angular.module('app', [
      'myApp.view2',
      'myApp.version'*/
 ])
-app.config(['$routeProvider', function ($routeProvider) {
+app.config(['$routeProvider', '$httpProvider', function ($routeProvider, $httpProvider) {
+    /*$httpProvider.defaults.useXDomain = true;
+    $httpProvider.defaults.withCredentials = true;
+    delete $httpProvider.defaults.headers.common["X-Requested-With"];
+    $httpProvider.defaults.headers.common["Accept"] = "application/json";
+    $httpProvider.defaults.headers.common["Content-Type"] = "application/json";*/
+
+
     $routeProvider.
     when('/dashboard', {
         templateUrl: 'deals/deals.html',
-        controller: 'View1Ctrl'
+        controller: 'DashboardCtrl'
     }).when('/deals', {
         templateUrl: 'deals/deals.html',
         controller: 'DealsCtrl'
@@ -20,3 +27,7 @@ app.config(['$routeProvider', function ($routeProvider) {
         controller: 'View1Ctrl'
     }).otherwise({redirectTo: '/dashboard'});
 }]);
+
+app.run(function(){
+
+})
