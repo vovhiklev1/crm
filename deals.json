@@ -34,6 +34,49 @@
       "company": "",
       "status": "Замер",
       "budget": "113"
+    },
+
+    {
+      "name": "Дарницкий р-н6",
+      "customer": "Ольга",
+      "company": "",
+      "status": "Замер",
+      "budget": "113"
+    },
+    {
+      "name": "Дарницкий р-н7",
+      "customer": "Ольга",
+      "company": "",
+      "status": "Замер",
+      "budget": "113"
+    },
+    {
+      "name": "Дарницкий р-н8",
+      "customer": "Ольга",
+      "company": "",
+      "status": "Замер",
+      "budget": "113"
+    },
+    {
+      "name": "Дарницкий р-н9",
+      "customer": "Ольга",
+      "company": "",
+      "status": "Замер",
+      "budget": "113"
+    },
+    {
+      "name": "Дарницкий р-н10",
+      "customer": "Ольга",
+      "company": "",
+      "status": "Замер",
+      "budget": "113"
+    },
+    {
+      "name": "Дарницкий р-н11",
+      "customer": "Ольга",
+      "company": "",
+      "status": "Замер",
+      "budget": "113"
     }
   ]
 }

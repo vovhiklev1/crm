@@ -84,33 +84,33 @@ html, body {
     }
 }
 
-/* Large desktop */
+/*!* Large desktop *!
 @media (min-width: 1200px) {
     .container {
         max-width: 1200px;
     }
 }
 
-/* Portrait tablet to landscape and desktop */
+!* Portrait tablet to landscape and desktop *!
 @media (min-width: 768px) and (max-width: 979px) {
     .container {
         max-width: 768px;
     }
 }
 
-/* Landscape phone to portrait tablet */
+!* Landscape phone to portrait tablet *!
 @media (max-width: 767px) {
     .container {
         max-width: 767px;
     }
 }
 
-/* Landscape phones and down */
+!* Landscape phones and down *!
 @media (max-width: 480px) {
     .container {
         max-width: 480px;
     }
-}
+}*/
 
 
 ul {
@@ -220,4 +220,24 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
 
 * {
   //  outline: 1px solid red;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) {
+    background: #eee;
+}
+th {
+    background: #333;
+    color: white;
+    font-weight: bold;
+}
+td, th {
+    padding: 6px;
+    border: 1px solid #ccc;
+    text-align: left;
 }

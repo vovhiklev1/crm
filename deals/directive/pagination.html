@@ -1,0 +1,8 @@
+<ul class="pagination">
+    <li><a class="prev" href="" ng-click="getPrev()">«</a></li>
+    <li class="item_" ng-repeat="i in list track by $index">
+        <a class="item" ng-click="setPage(i)"
+           href="">{{i}}</a>
+    </li>
+    <li><a class="next" href="" ng-click="getNext()">»</a></li>
+</ul>

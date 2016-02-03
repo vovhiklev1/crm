@@ -16,12 +16,17 @@
         </aside>
         <div class="col-md-11">
             <div class="content-wrap">
-                <header class="header-wrap">
-                    <h2>header</h2>
-                </header>
+
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-10 ">
+                        <div class="col-md-12">
+                            <header class="header-wrap">
+                                <h2>Сделки</h2>
+                            </header>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 ">
                             <div class="">
                                 <div class="table-wrap">
                                     <table class="table table-hover">
@@ -48,17 +53,21 @@
                                     </table>
                                 </div>
 
-                                <ul class="pagination">
-                                    <li><a href="" ng-click="getPrev()">«</a></li>
-                                    <!--<li><a href="#">«</a></li>
-                                    <li><a href="#">1</a></li>
-                                    <li><a class="active" href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>-->
-                                    <li ng-repeat="i in list track by $index"><a ng-class="{'ac': true }" href="#">{{i}}</a></li>
-                                    <li><a  href="" ng-click="getNext()">»</a></li>
+                                <pagination-directive></pagination-directive>
 
-                                </ul>
+                                <!--<ul class="pagination">
+                                    <li><a class="prev" href="" ng-click="getPrev()">«</a></li>
+                                   &lt;!&ndash; <li class="item_" ng-repeat="i in list track by $index">
+                                        <a class="item" ng-click="setPage(i)"
+                                           href="">{{i}}</a>
+                                    </li>&ndash;&gt;
+                                    <li class="item_">
+                                        <a class="item" ng-click="setPage(i)"
+                                           href="">{{i}}</a>
+                                    </li>
+                                    <li><a class="next" href="" ng-click="getNext()">»</a></li>
+                                </ul>-->
+
                             </div>
                         </div>
                     </div>
